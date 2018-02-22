@@ -20,12 +20,6 @@ int main()
                 cin>>input;
                
                
-               if( numItems > 4 )
-                {
-                cout<< "You'll need a bigger list!\n";
-                input = 'q';        
-                }
-               
                
                if( input == 'a' || input == 'A' )
                 {        
@@ -34,6 +28,18 @@ int main()
                 list[numItems] = food;
                 numItems ++;
                 }
+
+                if( numItems > 4)
+                {
+                cout<< "You'll need a bigger list!\n";
+                numItems = 4;
+                }
+
+
+
+
+
+
 
         }
         while( input != 'Q' && input != 'q'); 
