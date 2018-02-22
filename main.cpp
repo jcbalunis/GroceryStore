@@ -22,14 +22,14 @@ int main()
                
                if( numItems > 4 )
                 {
-                cout<< "You'll need a bigger list. \n";
-                        input = 'q';
+                cout<< "You'll need a bigger list!\n";
+                input = 'q';        
                 }
                
                
                if( input == 'a' || input == 'A' )
                 {        
-                cout<< "What is the item? \n";
+                cout<< "What is the item?\n";
                 cin>> food;
                 list[numItems] = food;
                 numItems ++;
