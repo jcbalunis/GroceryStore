@@ -20,7 +20,7 @@ int main()
                 cin>>input;
                
                
-               if( numItems >= 5)
+               if( numItems > 4 )
                 {
                 cout<< "You'll need a bigger list. \n";
                         input = 'q';
@@ -29,7 +29,7 @@ int main()
                
                if( input == 'a' || input == 'A' )
                 {        
-                cout<< "What is the Item? \n";
+                cout<< "What is the item? \n";
                 cin>> food;
                 list[numItems] = food;
                 numItems ++;
