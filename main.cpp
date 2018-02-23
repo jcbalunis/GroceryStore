@@ -21,7 +21,7 @@ int main()
                
                
                
-               if( input == 'a' || input == 'A' )
+               if( input == 'a' || input == 'A')
                 {        
                 cout<< "What is the item?\n";
                 cin>> food;
@@ -32,7 +32,6 @@ int main()
                 if( numItems > 4)
                 {
                 cout<< "You'll need a bigger list!\n";
-                numItems = 4;
                 }
 
 
