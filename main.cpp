@@ -18,23 +18,25 @@ int main()
                 cout<<"\n (Q)uit";
                 cout<<"\nYour choice (A/Q): ";
                 cin>>input;
-               
-               
-               
-               if( input == 'a' || input == 'A')
+
+
+
+                if( input == 'a' || input == 'A')
                 {        
-                cout<< "What is the item?\n";
-                cin>> food;
-                list[numItems] = food;
-                numItems ++;
+                        cout<< "What is the item?\n";
+                        cin>> food;
+
+                        if( numItems > 4) 
+                        {
+                                cout<< "You'll need a bigger list!\n";
+                        }
+                        else
+                        {
+
+                                list[numItems] = food;
+                                numItems ++;
+                        } 
                 }
-
-                if( numItems > 4)
-                {
-                cout<< "You'll need a bigger list!\n";
-                }
-
-
 
 
 
