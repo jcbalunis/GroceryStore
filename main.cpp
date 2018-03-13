@@ -9,6 +9,7 @@ int main()
         vector <string> list;
         string food;
         char input;
+        int number;
         do
         {
 
@@ -51,7 +52,10 @@ int main()
 
         for(int i = 0; i < list.size(); i++)
         {
-                cout<< list[i]<<endl;
+               number = 1 + i;
+               cout << number;
+               cout<< list[i]<<endl;
+               
         }
 
 
