@@ -54,6 +54,7 @@ int main()
         {
                number = 1 + i;
                cout << number;
+               cout << " ";
                cout<< list[i]<<endl;
                
         }
