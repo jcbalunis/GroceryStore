@@ -1,13 +1,13 @@
 //Author: Joseph Balunis
 #include<iostream>
-#include<string>
+#include<vector>
 using namespace std;
 
 
 int main()
 {
-        string list[5], food; //array of 5 strings
-        int numItems = 0;
+        vector <string> list;
+        string food;
         char input;
         do
         {
@@ -25,17 +25,15 @@ int main()
                 {        
                         cout<< "What is the item?\n";
                         cin>> food;
+                        list.push_back(food);
 
-                        if( numItems > 4) 
-                        {
-                                cout<< "You'll need a bigger list!\n";
-                        }
-                        else
-                        {
 
-                                list[numItems] = food;
-                                numItems ++;
-                        } 
+
+                }
+
+                if( list.size() == 0)
+                {
+                    cout<< "No items to buy!" <<endl;
                 }
 
 
@@ -43,13 +41,18 @@ int main()
 
 
         }
-        while( input != 'Q' && input != 'q'); 
-        cout<< "==ITEMS TO BUY==" <<endl;
-        cout<< "1 " <<list[0]<< endl;
-        cout<< "2 " <<list[1]<< endl;
-        cout<< "3 " <<list[2]<< endl;
-        cout<< "4 " <<list[3]<< endl;
-        cout<< "5 " <<list[4]<< endl; 
+        while( input != 'q' && input != 'Q');
+
+
+              if( list.size() >= 1)
+              {
+              cout<< "==ITEMS TO BUY==" <<endl;
+              }
+
+        for(int i = 0; i < list.size(); i++)
+        {
+                cout<< list[i]<<endl;
+        }
 
 
         return 0;
